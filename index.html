@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel = "stylesheet" href="logandreg.css">
 		<script src="./jquery-3.4.1.slim.min.js"></script>
-		<script type="text/javascript" src="./app.js"></script>
+		
+		<script type="text/javascript" src="./logandreg.js"></script>
 	</head>
+	<div id="container">
+        <div id="tabs">
+            <p id="logt" class="tabs" onclick="loginTabF()">Log in</p>
+            <p id="regt" class="tabs" onclick="registerTabF()">Register</p>
 
-	<body>
+            <div id="clear"></div>
+        </div>
+
+        <div id="cont">
+            <div id="logform" class="comm">
+                <h3>Sign in</h3>
+
+                <input id="semail" type="email" placeholder="Email" required/>
+                <input id="spass" type="password" placeholder="Password" required/>
+                <input type="submit" onclick="login()" value="Submit"/>
+
+                <!--<p onclick="forTabFun()">Forget Password?</p>-->
+            </div>
+            <div id="registerform" class="comm">
+                <h3>Register</h3>
+
+                <input id="remail" type="email" placeholder="Email" required/>
+                <input id="rpass" type="password" placeholder="Password" required/>
+                <input id="rrepass" type="password" placeholder="Re write Password" required/>
+                <input type="submit" onclick="register()" value="Submit"/>
+
+            </div >
+            <div id="forgot" class="comm">
+            <h3>Forgot Password</h3>
+            <div>
+                <input id="fe" type="email" placeholder="Email" required/>
+                <input type="submit" onclick="forgot()" value="Submit"/>
+            </div>
+            </div>
+        </div>
+    </div>
+	<!--<body>
 		<div id="score">
 			<label for="lblScore">SCORE:</label>
 			<input id="lblScore" type="text" />
@@ -17,5 +54,5 @@
 		<div id="game">
 			<canvas id="canvas" height="600" width="600"></canvas>
 		</div>
-	</body>
+	</body>-->
 </html>
