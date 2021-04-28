@@ -1,0 +1,18 @@
+#gameFrame_div{
+    position: absolute;
+    margin-left: 20%;
+}
+#game_wrapper {
+    display: flex;
+}
+#game_settings {
+    border: 1px solid black;
+}
+
+#clock_image{
+    display: none;
+  }
+
+#newGameButton{
+    margin-top : 25px;
+}

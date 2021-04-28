@@ -1,0 +1,57 @@
+
+
+#about_div {
+    display: none; /* Hidden at start */
+    position: fixed; /* Not moves */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full Screen */
+    height: 100%; /* Full Screen */
+    overflow: auto; /* Enable scroll  */
+    
+    background-color: rgba(9, 130, 243, 0.4); /* background color when about window open */
+}
+
+#about_div h3{
+    color: #fffb00;
+}
+
+#about_div p{
+    color: rgb(201, 202, 199);
+}
+
+#about_div h4{
+    color: rgb(201, 202, 199);
+}
+
+header h2{
+    color: rgb(201, 202, 199);
+}
+
+
+
+
+.modal-content {
+    background-color: #222221;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    animation-name: animatetop;
+    }
+
+/* The Close Button */
+.closeAbout {
+    color: rgb(7, 0, 0);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.closeAbout:hover,
+.close:focus {
+    color: rgb(219, 10, 10);
+    text-decoration: none;
+    cursor: pointer;
+}

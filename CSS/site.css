@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+
+
+/* INPUTS FIELDS */
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(201, 202, 199);
+    
+  }
+
+  
+input[type=color], select {
+    width: 30%;
+    
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(201, 202, 199);
+  }
+  input[type=number] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(201, 202, 199);
+ }  
+
+img {
+    width: 38%; /* or any custom size */
+    height: 35%; 
+    object-fit: contain;
+}
+
+.footer {
+    clear: both;
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    margin-top: -200px;
+       /* Height of the footer */
+    
+    background: #87CEFA;
+    
+    
+    width:100%;
+    
+    
+    
+ }
+
+
+ fieldset {
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  legend {
+    /* padding: 0.2em 0.5em; */
+    color: #fffb00;
+    font-size:180%;
+    text-align:center;
+    position: relative;
+    
+  }
+
+
+
+
+ 
+
+ 
+
+  #reg_date_input{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(201, 202, 199);
+  }
+
+  h3{
+    font-family: 'Megrim', cursive;
+    font-size: x-large;
+    color: rgb(201, 202, 199);
+    margin: 20px 0;
+  }
+  
+
+
+  p{
+    font-family:  cursive;
+  }
+
+  
+
+  body{
+    background-image: url(back.jpg);
+  } 
+
+
+

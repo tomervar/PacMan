@@ -1,0 +1,164 @@
+
+
+#menu
+{
+	position: fixed;
+	width: 100%;
+	height: 35px;
+	margin: 0;
+    background-color: #292929;
+    overflow: hidden;
+    z-index:1;
+}
+
+nav
+{
+    position: absolute;
+    top: 2%;
+    right: 0;
+    left: 0;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+	background: #292929;
+	
+}
+
+nav a
+{
+    position: relative;
+    width: 14.28571429%;
+    display: table-cell;
+    text-align: center;
+    color: #b9b9b9;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    transition: 0.2s ease color;
+}
+
+
+nav a:before, nav a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before
+{
+    top: 2px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+}
+
+nav a:after
+{
+    top: 10px;
+    left: 20px;
+    width: 8px;
+    height: 8px
+}
+
+nav a:nth-child(1):before
+{
+    background-color: yellow;
+}
+
+nav a:nth-child(1):after
+{
+    background-color: red;
+}
+
+nav a:nth-child(2):before
+{
+    background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after
+{
+    background-color: #89ff00;
+}
+
+nav a:nth-child(3):before
+{
+    background-color: purple;
+}
+
+nav a:nth-child(3):after
+{
+    background-color: palevioletred;
+}
+nav a:nth-child(4):before
+{
+    background-color: blue;
+}
+
+nav a:nth-child(4):after
+{
+    background-color: cyan;
+}
+nav a:nth-child(5):before
+{
+    background-color: orange;
+}
+
+nav a:nth-child(5):after
+{
+    background-color: orangered;
+}
+nav a:nth-child(6):before
+{
+    background-color: green;
+}
+
+nav a:nth-child(6):after
+{
+    background-color: greenyellow;
+}
+nav a:nth-child(7):before
+{
+    background-color: gold;
+}
+
+nav a:nth-child(7):after
+{
+    background-color: silver;
+}
+
+
+
+nav a:hover
+{
+    color: #fff;
+}
+
+nav a:hover:before, nav a:hover:after
+{
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator
+{
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator
+{
+    left: 70%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+
+
+

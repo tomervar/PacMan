@@ -1,0 +1,267 @@
+/* WELCOME BUTTOONS */  
+
+#welcomeRegButton,#welcomeLogButton {
+    border-radius: 10px;
+    background-color:#FF9F00;
+    border-color: red;
+    border:4px solid red;
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+    border-bottom-style: outset;
+    
+    border-bottom-width: 7px;
+    border-radius: 25px;
+    font-family:  cursive;
+  }
+  
+  #welcomeRegButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #welcomeRegButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #welcomeRegButton:hover span {
+    padding-right: 25px;
+  }
+  
+  #welcomeRegButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #welcomeLogButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #welcomeLogButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #welcomeLogButton:hover span {
+    padding-right: 25px;
+  }
+  
+  #welcomeLogButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/*END WELCOME BUTTOONS */
+#srandom ,#sstart ,#sreset{
+    border-radius: 10px;
+    background-color:#FF9F00;
+    border-color: red;
+    border:4px solid red;
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-bottom-style: outset;
+    
+    border-bottom-width: 7px;
+    border-radius: 25px;
+    font-family:  cursive;
+}
+
+#srandom span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#srandom span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#srandom:hover span{
+    padding-right: 25px;
+}
+
+#srandom:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#sstart span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sstart span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#sstart:hover span{
+    padding-right: 25px;
+}
+
+#sstart:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #sreset span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sreset span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#sreset:hover span{
+    padding-right: 25px;
+}
+
+#sreset:hover span:after {
+    opacity: 1;
+    right: 0;
+  }  
+
+
+
+#login_div_button ,#reg_div_button ,#regreset,#newGameButton{
+    border-radius: 10px;
+    background-color:#FF9F00;
+    border-color: red;
+    border:4px solid red;
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-bottom-style: outset;
+    
+    border-bottom-width: 7px;
+    border-radius: 25px;
+    font-family:  cursive;
+}
+
+#login_div_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #login_div_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #login_div_button:hover span {
+    padding-right: 25px;
+  }
+  
+  #login_div_button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #reg_div_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #reg_div_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #reg_div_button:hover span {
+    padding-right: 25px;
+  }
+  
+  #reg_div_button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+
+  #regreset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #regreset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #regreset:hover span {
+    padding-right: 25px;
+  }
+  
+  #regreset:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel = "stylesheet" type="text/css" href="app_css.css"/>
-<script src="./jquery-3.4.1.slim.min.js"></script>
-<script type="text/javascript" src="./logandreg.js"></script>
+<link rel = "stylesheet" type="text/css" href="./CSS/site.css"/>
+<link rel = "stylesheet" type="text/css" href="./CSS/menu.css"/>
+<link rel = "stylesheet" type="text/css" href="./CSS/about.css"/>
+<link rel = "stylesheet" type="text/css" href="./CSS/button.css"/>
+<link rel = "stylesheet" type="text/css" href="./CSS/game.css"/>
 
-<script type="text/javascript" src="./app.js"></script>
+<script src="./JS/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="./JS/sitecontroller.js"></script>
+<script type="text/javascript" src="./JS/app.js"></script>
 <title>2PacMan Game</title>
-<link rel="icon" href="logo.jpg" />
+<link rel="icon" href="./Source/Image/logo.jpg" />
 </head>
 <body>
     
     <nav id="menu">
-        <a href="#" class="active" id="mwelcome">Home</a>
-        <a href="#" class="active" id="mlogin">Login</a>
-        <a href="#" class="active" id="mregister">Registration</a>
+        <a href="#" class="active" id="mwelcome" onclick="openWelcome()">Home</a>
+        <a href="#" class="active" id="mlogin" onclick="openLogin()">Login</a>
+        <a href="#" class="active" id="mregister" onclick="openRegister()">Registration</a>
         <a href="#"  class="button" id="mabout" onclick="showAbout()">About</a>
     </nav>
     
     <br/>
     <header>
-        <center><img src="logoo.jpg" id="logoimg"/><h2>2PacMan Made By: Tomer Varon & Lior Tabachnik</h2><h2>ID's: 205360498 & 308438795</h2></center>
+        <center><img src="./Source/Image/logoo.jpg" id="logoimg"/><h2>2PacMan Made By: Tomer Varon & Lior Tabachnik</h2><h2>ID's: 205360498 & 308438795</h2></center>
         
             
     </header>
 	<center>
-        <img id="clock_image" src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-alarm-clock-icon-png-image_1611893.jpg"/>
+        <img id="clock_image" src="./Source/Image/clock.jpg"/>
         <audio id="beginning_game">
-            <source src="pacman_beginning.wav" type="audio/x-wav">
+            <source src="./Source/Audio/pacman_beginning.wav" type="audio/x-wav">
         </audio>
         <audio id="pacman_chomp">
-            <source src="pacman_chomp.wav" type="audio/x-wav">
+            <source src="./Source/Audio/pacman_chomp.wav" type="audio/x-wav">
         </audio>
         <audio id="pacman_death">
-            <source src="pacman_death.wav" type="audio/x-wav">
+            <source src="./Source/Audio/pacman_death.wav" type="audio/x-wav">
         </audio>
         <audio id="pacman_eatfruit">
-            <source src="pacman_eatfruit.wav" type="audio/x-wav">
+            <source src=  "./Source/Audio/pacman_eatfruit.wav" type="audio/x-wav">
         </audio>
         <audio id="pacman_eatghost">
-            <source src="pacman_eatghost.wav" type="audio/x-wav">
+            <source src="./Source/Audio/pacman_eatghost.wav" type="audio/x-wav">
+        </audio>
+        <audio id="wining_sound">
+            <source src="./Source/Audio/mixkit-clapping-male-crowd-439.wav" type="audio/x-wav">
+        </audio>
+        <audio id="game_song">
+            <source src="./Source/Audio/2Pac_ft_Dr_Dre_-_California_Love.mp3" type="audio/mp3">
         </audio>
 
         
@@ -48,7 +58,7 @@
             <fieldset>
                 <legend>Welcome To Our Game</legend>
                 <h3>Please Register or Login to start playing.</h3>
-                <img src="images.jpg" class="wlogo" />
+                <img src="./Source/Image/images.jpg" class="wlogo" />
                 <br>
                 <button class="button" id="welcomeRegButton"><span>Registration</span></button>
                 <button class= "button" id="welcomeLogButton"><span>Login</span></button>
@@ -70,7 +80,7 @@
             <br>
             <fieldset>
                 <legend>Registr To Our Site</legend>
-                <form>
+                
                     UserName :<br/> <input type="text" id="reg_user_input" placeholder="Your UserName"/><br/>
                     Password :<br/> <input type="text" id="reg_password_input" placeholder="Your Password"/><br/>
                     Re-Password :<br/> <input type="text" id="reg_repassword_input" placeholder="Retype Your Password"/><br/>
@@ -80,7 +90,7 @@
                     <br/>
                     <button class= "button" id="reg_div_button"><span>Registration</span></button>
                     <button class= "button" type="reset" id="regreset"><span>Reset</span></button>
-                </form> 
+                
             </fieldset>
         </div>
 
@@ -89,6 +99,10 @@
         <div id="gameFrame_div" style="width: 600px;">
 			<div id="game_wrapper">
                 <div id="new_game">
+                    <div id="userName" style="float: left; width: 200px;">
+                        <label for="lblUserName">User Name:</label>
+                        <input id="lblUserName" type="text" />
+                    </div>
                     <div id="score" style="float: left; width: 200px;">
                         <label for="lblScore">SCORE:</label>
                         <input id="lblScore" type="text" />
@@ -117,11 +131,11 @@
             <br>
             <fieldset>
                 <legend>Settings</legend>
-                <form>
+                
                     Number Of Game Balls : <input type="number" min="50" max="90" id="sballs" value="50" /><br/>
                     Game Time : <input type="number" min="60"  id="stime" value="60" /><br/>
                     Number of Ghosts : <input type="number" min="1" max="4" id="sghost" value="4" /><br/>
-                    Up Button : <input type="text" id="sup" value="ArrowUp" /><br/> 
+                    Up Button : <input type="text" id="sup" value="ArrowUp"  /><br/> 
                     Down Button : <input type="text" id="sdown" value="ArrowDown" /><br/>
                     Left Button : <input type="text" id="sleft" value="ArrowLeft" /><br/>
                     Right Button : <input type="text" id="sright" value="ArrowRight" /><br/>
@@ -133,7 +147,7 @@
                     <button class= "button" id="srandom"><span>Random</span></button>
                     <button class= "button" id="sstart"><span>Start</span></button>
                     <button class= "button" type="reset" id="sreset"><span>Reset</span></button>
-                </form>
+                
             </fieldset>
         </div>
             <div id = "about_div" class="model" role="dialog">
@@ -148,15 +162,18 @@
                         3rd year students in  Software and System Information  Engineering Department.
                         <br>
                         <h3>uses:</h3>
-                        <h4>1. Date picker.<br>
-                        2. Import "mergim" font in css file.<br>
-                    3.Register Validation with Regular Expression</h4>
+                        <h4>1. Date picker<br>
+                        2.Color picker.<br>3. Import "mergim" font in css file.<br>
+                    4.Register Validation with Regular Expression instead jQuery Validation<br/>
+                5.Pics We Found on Goggle</h4>
                         <br>
                         <h3>Difficulties in this Project:</h3>
-                        <h4>1.Desiging <br>
-                        2. "About" dialog <br>
+                        <h4>1.We afford alot of hours to Design this Site . <br>
+                        2. "About" dialog toke us lot of afforts to understand how to close dialog in multiple ways <br>
                         3.Getting the ghosts  move towards the pacman<br>
-                        4.drawing ghosts</h4>
+                        4.drawing ghosts shape<br>
+                        5.Never Use Form Tag , Spend Almost day on Stupid Bug !!! :)
+                    </h4>
                         
                     
                     </p>
@@ -173,5 +190,10 @@
 	</center>
 
 </body>
-<script type="text/javascript" src="./about.js"></script>
+<script type="text/javascript" src="./JS/about.js"></script>
+<script type="text/javascript" src="./JS/welcome.js"></script>
+<script type="text/javascript" src="./JS/login.js"></script>
+<script type="text/javascript" src="./JS/register.js"></script>
+<script type="text/javascript" src="./JS/settings.js"></script>
+<script type="text/javascript" src="./JS/menu.js"></script>
 </html>	
