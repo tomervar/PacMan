@@ -880,6 +880,7 @@ function UpdatePosition() {
 			if(pacman_lives <= 0){
 				window.clearInterval(interval);
 				window.alert("Loser!");
+				pauseAudio(gameSong)
 				game_runing = false;
 			}
 			else{
